@@ -1,0 +1,47 @@
+.fullscreen-image-slider .orbit-caption {
+    bottom: 55%;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    background: none;
+    text-align: center;
+    color: #fefefe;
+}
+
+html {
+    background: url("../images/theater-1800.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.fullscreen-image-slider:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .6;
+}
+
+h1 .fi-ticket {
+    font-size: 2.5em;
+}
+
+.button {
+    background-color: #dc4225;
+    color: white;
+}
+
+.button:hover {
+    color: #dc4225;
+    background-color: white;
+}
+
+.project-links {
+    padding-top: 1.5em;
+    font-size: .9em;
+}
