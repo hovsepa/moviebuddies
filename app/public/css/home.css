@@ -42,6 +42,15 @@ h1 .fi-ticket {
 }
 
 .project-links {
-    padding-top: 1.5em;
-    font-size: .9em;
+    padding-top: 2em;
+}
+
+.project-links a {
+    font-size: 1.2em;
+    color: white;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+    font-weight: 500;
 }

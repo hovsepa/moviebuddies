@@ -6,8 +6,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MovieBuddies</title>
-    <link rel="stylesheet" href="css/foundation.min.css">
-    <link rel="stylesheet" href="css/survey.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/css/foundation.min.css" />
+    <link rel="stylesheet" href="/css/survey.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-icons.min.css">
 </head>
 
@@ -31,7 +31,7 @@
             <div class="large-auto cell">
                 <label for="name" required>
                     <i class="fi-camera"></i> Link to photo of you</label>
-                <input type="text" name="name" placeholder="https://www.site.com/you.jpg" id="url" >
+                <input type="text" name="name" placeholder="https://www.site.com/you.jpg" id="url">
             </div>
         </div>
 
@@ -96,7 +96,7 @@
                 </select>
             </div>
         </div>
-        
+
         <div class="grid-x">
             <div class="large-auto cell">
                 <label>Finding Nemo</label>
@@ -117,18 +117,18 @@
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
-                    <option value="5">5 - The Circle of Life</option>
+                    <option value="5">5 - Ground control to Star Command</option>
                 </select>
             </div>
             <div class="large-auto cell">
                 <label>Harry Potter (average all)</label>
                 <select id="q08">
                     <option selected disabled>Rate This Movie</option>
-                    <option value="1">1 - Sleep Time</option>
+                    <option value="1">1 - Not interested</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
-                    <option value="5">5 - #9hourmarathon</option>
+                    <option value="5">5 - Wingardium Leviosa!</option>
                 </select>
             </div>
             <div class="large-auto cell">
@@ -146,22 +146,30 @@
                 <label>Mrs. Doubtfire</label>
                 <select id="q10">
                     <option selected disabled>Rate This Movie</option>
-                    <option value="1">1 - Don't Get the Hype</option>
+                    <option value="1">1 - Not for Me Dear</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
-                    <option value="5">5 - You're Stronger Than You Believe</option>
+                    <option value="5">5 - Ohh, thank you, dear. Touch me again and I'll drown you.</option>
                 </select>
             </div>
         </div>
 
-        <a href="#" class="button" id="submit">Find My Buddy</a>
+        <a href="#" data-open="modal" class="button" id="submit">Find My Buddy</a>
+        <a href="#" class="button" id="autofill">Autofill</a>
 
     </section>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/what-input.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <!-- Modal Time  -->
+    <section class="reveal">
+        <div class="reveal" id="modal" data-reveal>
+        </div>
+    </section>
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/4.3.1/what-input.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 

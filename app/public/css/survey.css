@@ -1,77 +1,74 @@
-  .hover-underline-menu {
-    width: 100%;
-  }
+.hover-underline-menu {
+  width: 100%;
+}
 
-  .hover-underline-menu .menu {
-    background-color: #dc4225;
-  }
+.hover-underline-menu .menu {
+  background-color: #dc4225;
+}
 
-  .hover-underline-menu .menu a {
-    color: #fefefe;
-    padding: 1.2rem 1.5rem;
-    font-weight: 500;
-  }
+.hover-underline-menu .menu a {
+  color: #fefefe;
+  padding: 1.2rem 1.5rem;
+  font-weight: 500;
+}
 
-  .hover-underline-menu .menu .selected a {
-    color: #dc4225;
-    padding: 1.2rem 1.5rem;
-    font-weight: 500;
-    /* border-bottom: 0.125rem solid; */
-    background-color: rgba(255, 255, 255, .9)
-  }
+.hover-underline-menu .menu .selected a {
+  color: #dc4225;
+  padding: 1.2rem 1.5rem;
+  font-weight: 500;
+  /* border-bottom: 0.125rem solid; */
+  background-color: rgba(255, 255, 255, .9)
+}
 
-  .hover-underline-menu .menu .not-active .underline-from-center {
-    position: relative;
-  }
+.hover-underline-menu .menu .not-active .underline-from-center {
+  position: relative;
+}
 
-  .hover-underline-menu .menu .not-active .underline-from-center::after {
-    content: "";
-    position: absolute;
-    top: calc(100% - 0.125rem);
-    border-bottom: 0.125rem solid #fefefe;
-    left: 50%;
-    right: 50%;
-    transition: all 0.5s ease;
-  }
+.hover-underline-menu .menu .not-active .underline-from-center::after {
+  content: "";
+  position: absolute;
+  top: calc(100% - 0.125rem);
+  border-bottom: 0.125rem solid #fefefe;
+  left: 50%;
+  right: 50%;
+  transition: all 0.5s ease;
+}
 
-  .hover-underline-menu .menu .not-active .underline-from-center:hover::after {
-    left: 0;
-    right: 0;
-    transition: all 0.5s ease;
-  }
+.hover-underline-menu .menu .not-active .underline-from-center:hover::after {
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease;
+}
 
-  .hover-underline-menu .menu .back-home a {
-    font-weight: 900;
-  }
+.hover-underline-menu .menu .back-home a {
+  font-weight: 900;
+}
 
+.container {
+  width: 1024px;
+  margin: 2em auto 2em auto;
+}
+
+.large-auto {
+  padding: 0 1em 1em 0;
+  /* padding: 1em; */
+}
+
+.button {
+  background-color: #dc4225;
+  color: white;
+}
+
+.button:hover {
+  color: #dc4225;
+  background-color: white;
+  border: 2px solid #dc4225;
+}
+
+@media (max-width: 1024px) {
   .container {
-    width: 1024px;
+    width: 400px;
     margin: 2em auto 2em auto;
+    padding: 2em;
   }
-  /* button {
-  margin: 0 auto;
-} */
-
-  .large-auto {
-    padding: 0 1em 1em 0;
-    /* padding: 1em; */
-  }
-
-  .button {
-    background-color: #dc4225;
-    color: white;
-  }
-
-  .button:hover {
-    color: #dc4225;
-    background-color: white;
-    border: 2px solid #dc4225;
-  }
-
-  @media (max-width: 1024px) {
-    .container {
-      width: 400px;
-      margin: 2em auto 2em auto;
-      padding: 2em;
-    }
-  }
+}
