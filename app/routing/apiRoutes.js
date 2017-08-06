@@ -28,8 +28,15 @@ module.exports = function (app) {
                 }
             }
         }
+
         console.log("match", movieMatch);
         res.json(movieMatch);
         friends.push(req.body);
+        
+        movieMatch = {
+            name: "",
+            photo: "",
+            friendDiff: 150
+        };
     });
 };

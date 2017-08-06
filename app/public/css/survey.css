@@ -59,6 +59,11 @@
   color: white;
 }
 
+.button:visited {
+  background-color: #dc4225;
+  color: white;
+}
+
 .button:hover {
   color: #dc4225;
   background-color: white;

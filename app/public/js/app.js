@@ -48,8 +48,8 @@ $("#submit").click(function (event) {
 
 $("#autofill").click(function (event) {
     event.preventDefault();
-    $("#name").val("test");
-    $("#url").val("test");
+    $("#name").val("Mike Test");
+    $("#url").val("https://media1.giphy.com/media/8P3LYmfINs5Da/giphy.gif");
     $("#q01").val("1");
     $("#q02").val("3");
     $("#q03").val("4");
@@ -65,9 +65,9 @@ $("#autofill").click(function (event) {
 
 let renderModal = (response) => {
     $(".reveal").append(
-        "<h1>We've got you a movie buddy!</h1>" +
+        "<h2>We've got you a movie buddy!</h2>" +
         "<p><img src=" + response.photo + "></p>" +
-        "<p>" + response.name + "</p>" +
+        "<h3>" + response.name + "</h3>" +
         "<button class='close-button' data-close aria-label='Close modal' type='button'>" +
         "<span id='modal-clear' aria-hidden='true'>&times;</span>" +
         "</button>"
